@@ -1,10 +1,13 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./component/Header/Header";
+import { Landing } from "./pages";
 
 function App() {
   return (
     <div className="app">
-      <Header />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
     </div>
   );
 }
