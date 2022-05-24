@@ -1,0 +1,8 @@
+header {
+  box-shadow: 1px 1px 10px grey;
+}
+
+.logo {
+  max-width: 10rem;
+  object-fit: cover;
+}
