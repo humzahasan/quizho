@@ -1,0 +1,23 @@
+.landing-container {
+  display: grid;
+  margin: 1rem;
+  padding: 1rem;
+  gap: 10px;
+  grid-template-rows: 1fr auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.landing-title {
+  color: var(--primary-color-light);
+}
+
+.landing-btn {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+}
+
+.landing-btn:hover {
+  background-color: var(--primary-color-light);
+}

@@ -1,6 +1,0 @@
-.app {
-  height: 100vh;
-  display: grid;
-  gap: 10px;
-  grid-template-rows: 1fr 1fr;
-}
