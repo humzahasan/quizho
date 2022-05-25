@@ -4,6 +4,19 @@ const QuestionContext = createContext({ questions: [] });
 
 const QuestionProvider = ({ children }) => {
   const [allQuestions, setAllQuestions] = useState([]);
+  const [selectedOption, setSelectedOption] = useState({
+    0: "",
+    1: "",
+    2: "",
+    3: "",
+    4: "",
+    5: "",
+    6: "",
+    7: "",
+    8: "",
+    9: "",
+  });
+  const [score, setScore] = useState(0);
 
   const getQuestions = async () => {
     const myQuestions = await axios.get(
@@ -18,7 +31,15 @@ const QuestionProvider = ({ children }) => {
   }, []);
 
   return (
-    <QuestionContext.Provider value={{ allQuestions }}>
+    <QuestionContext.Provider
+      value={{
+        allQuestions,
+        selectedOption,
+        setSelectedOption,
+        score,
+        setScore,
+      }}
+    >
       {children}
     </QuestionContext.Provider>
   );

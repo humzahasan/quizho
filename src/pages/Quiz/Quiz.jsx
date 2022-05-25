@@ -3,7 +3,6 @@ import { Header, QuestionCard } from "../../component";
 import { useQuestion } from "../../context/QuestionContext";
 import "./Quiz.css";
 const Quiz = () => {
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const { allQuestions } = useQuestion();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const prevQuestion = () => {
@@ -18,20 +17,22 @@ const Quiz = () => {
     setCurrentQuestionIndex(item - 1);
   };
 
+  const { selectedOption } = useQuestion();
+
   return (
     <div className="quizpage">
       <Header />
       <div className="quizpage-container">
         <div className="quizpage-review">
           <div className="list list-vertical">
-            {arr.map((item) => (
+            {Object.keys(selectedOption).map((item) => (
               <div
                 className="list-item"
                 key={item}
-                onClick={() => goToQuestion(item)}
+                onClick={() => goToQuestion(Number(item) + 1)}
               >
-                <p className="sm-text">Question {item}</p>
-                <p className="cta-text">Answer {item}</p>
+                <p className="sm-text">Question {Number(item) + 1}</p>
+                <p className="cta-text">{selectedOption[item]}</p>
               </div>
             ))}
           </div>
