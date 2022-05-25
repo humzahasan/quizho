@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import Left from "../../assets/ArrowLeft.svg";
 
@@ -36,7 +36,7 @@ const QuestionCard = ({
 
   return (
     <div className="question-card">
-      <div className="card card-lg">
+      <div className="card card-lg card-quiz">
         <div className="card-badge">
           <p className="card-badge-content">
             Question {currentQuestionIndex + 1}/{totalQuestion}
