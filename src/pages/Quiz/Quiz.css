@@ -1,0 +1,36 @@
+.quizpage {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.quizpage-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr;
+}
+
+.quizpage-review {
+  margin: 1rem;
+  width: 240px;
+}
+
+.quizpage-review {
+  display: flex;
+}
+
+.quizpage-review > .list {
+  width: 100%;
+}
+
+.list > p {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.quizpage-question {
+  margin-left: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
