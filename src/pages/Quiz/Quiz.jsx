@@ -8,9 +8,9 @@ const Quiz = () => {
       <Header />
       <div className="quizpage-container">
         <div className="quizpage-review">
-          <div class="list list-vertical">
+          <div className="list list-vertical">
             {arr.map((item) => (
-              <p class="list-item">
+              <p className="list-item">
                 <p className="sm-text">Question {item}</p>
                 <p className="cta-text">Answer {item}</p>
               </p>
