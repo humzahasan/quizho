@@ -29,8 +29,8 @@
 }
 
 .quizpage-question {
-  margin-left: 160px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  margin-top: 10rem;
 }

@@ -1,0 +1,17 @@
+.card {
+  width: 50%;
+  padding: 1rem;
+}
+
+.card > div {
+  margin: 1rem;
+}
+.card-extra-action {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-light);
+}
